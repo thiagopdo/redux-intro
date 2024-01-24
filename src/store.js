@@ -31,3 +31,5 @@ const reducer = (state = initialState, action) => {
 const store = createStore(reducer);
 
 store.dispatch({ type: "account/deposit", payload: 500 });
+
+console.log("redux");
