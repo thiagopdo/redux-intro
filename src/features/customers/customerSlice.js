@@ -30,7 +30,7 @@ const customerSlice = createSlice({
       },
     },
     updateName(state, action) {
-      state.fullName = action.payload.fullName;
+      state.fullName = action.payload;
     },
   },
 });
