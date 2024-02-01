@@ -10,6 +10,9 @@ const customerSlice = createSlice({
   name: "customer",
   initialState,
   reducers: {
+    /**
+     * needs the prepare function, because there are 2 args
+     */
     createCustomer: {
       prepare(fullName, nationalID) {
         return { payload: { fullName, nationalID } };
