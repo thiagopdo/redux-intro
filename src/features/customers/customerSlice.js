@@ -24,9 +24,9 @@ const customerSlice = createSlice({
         };
       },
       reducer(state, action) {
-        state.fullName = action.fullName;
-        state.nationalID = action.nationalID;
-        state.createdAt = action.createdAt;
+        state.fullName = action.payload.fullName;
+        state.nationalID = action.payload.nationalID;
+        state.createdAt = action.payload.createdAt;
       },
     },
     updateName(state, action) {
